@@ -60,7 +60,7 @@
               <div class="card-body">
                 <h4 class="card-title">Purchase Ticket</h4>
                 
-                <input type="text" id="amount" class="form-control">
+                <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="amount" class="form-control">
                 <button id='purchase' class="btn btn-primary">Purchase</button>
                 
               </div>
